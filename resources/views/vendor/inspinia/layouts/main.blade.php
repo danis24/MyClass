@@ -16,6 +16,7 @@
   <!-- Styles -->
   @section('styles')
   <link href="{{ mix('/css/inspinia.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="http://webapplayers.com/inspinia_admin-v2.4/css/plugins/ladda/ladda-themeless.min.css">
   @show
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -38,7 +39,9 @@
   <script src="{{ mix('/js/vendor.js') }}" charset="utf-8"></script>
 	<script src="{{ mix('/js/inspinia.js') }}" charset="utf-8"></script>
 	@show
-	@stack('body')
+  @stack('body')
+
+  @yield('user-scripts')
 </body>
 
 </html>

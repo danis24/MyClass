@@ -21,7 +21,7 @@ class CreateProfilesTable extends Migration
             $table->string('interest')->nullable();
             $table->longText("bio")->nullable();
             $table->integer('user_id')->unsigned();
-            $table->integer('class_id')->unsigned()->nullable();
+            $table->integer('class_id')->unsigned();
             $table->timestamps();
         });
     }

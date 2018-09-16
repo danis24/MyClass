@@ -3,9 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Services\MyClass\ClassService;
+use App\Services\Users\UserService;
 
 class HomeController extends Controller
 {
+    protected $class;
+    protected $user;
+
     /**
      * Create a new controller instance.
      *
@@ -14,6 +19,8 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+        $this->class = new ClassService;
+        $this->user = new UserService;
     }
 
     /**
@@ -23,6 +30,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $class = $this->class->getAll();
+        $profiles = $this->user->read(auth()->user()->id);
+        return view('home', compact('class', 'profiles'));
     }
 }

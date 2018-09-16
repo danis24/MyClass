@@ -9,3 +9,9 @@ $factory->define(Role::class, function (Faker $faker) {
         "guard_name" => "web"
     ];
 });
+
+$factory->define(\App\Services\MyClass\MyClass::class, function (Faker $faker) {
+    return [
+        "name" => $faker->name,
+    ];
+});
