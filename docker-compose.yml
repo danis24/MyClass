@@ -1,7 +1,7 @@
 version: '2'
 services:
       webserver:
-        container_name: bumd
+        container_name: myclass
         volumes:
              - .:/var/www/app
         links:
