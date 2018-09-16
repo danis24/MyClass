@@ -3,6 +3,6 @@
     {{ config('app.name', 'Inspinia') }}
   </div>
   <div>
-    <strong>Copyright</strong> Example Company &copy; {{ date('Y') }}
+    <strong>Copyright</strong> <a href="https://github.com/danis24">Danis Y</a> &copy; {{ date('Y') }}
   </div>
 </div>

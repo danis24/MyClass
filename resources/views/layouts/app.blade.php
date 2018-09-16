@@ -18,5 +18,26 @@
     <li class="active">
       <a href="{{ route('home') }}"><i class="fa fa-home"></i> <span class="nav-label">Home</span></a>
     </li>
+
+    <li>
+      <a href="{{ route('home') }}"><i class="fa fa-user"></i> <span class="nav-label">Presensi</span></a>
+    </li>
+
+    <li>
+      <a href="{{ route('home') }}"><i class="fa fa-users"></i> <span class="nav-label">Mahasiswa</span></a>
+    </li>
+
+    <li>
+      <a href="{{ route('home') }}"><i class="fa fa-modx"></i> <span class="nav-label">Task</span></a>
+    </li>
+
+    <li>
+      <a href="{{ route('home') }}"><i class="fa fa-book"></i> <span class="nav-label">Module</span></a>
+    </li>
+
+    <li>
+      <a href="{{ route('home') }}"><i class="fa fa-cog"></i> <span class="nav-label">Settings</span></a>
+    </li>
+
   </ul>
 @endsection
